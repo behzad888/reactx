@@ -8,9 +8,24 @@
  */
 
 import Sidebar from './Sidebar/Sidebar';
+import Collapse from './Collapse/Collapse';
+
+export type CollapsePropsType = {|
+  children: ReactElement<any>,
+  isOpened: boolean,
+  forceInitialAnimation?: boolean,
+  hasNestedCollapse?: boolean,
+  fixedHeight?: number,
+  style: any,
+  collapseClassName: string,
+  contentClassName: string,
+  onMeasure: () => void,
+|};
+
 
 const ReactComponents = {
   Sidebar,
+  Collapse,
 };
 
 export default ReactComponents;
