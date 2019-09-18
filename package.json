@@ -5,7 +5,7 @@
     "packages/*"
   ],
   "dependencies": {
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "react": "16.9.0-alpha.0",
     "react-dom": "16.9.0-alpha.0",
     "uuid": "^3.3.2"
@@ -127,5 +127,6 @@
     "prettier": "node ./scripts/prettier/index.js write-changed",
     "prettier-all": "node ./scripts/prettier/index.js write",
     "version-check": "node ./scripts/tasks/version-check.js"
-  }
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/@reactx" }
 }
